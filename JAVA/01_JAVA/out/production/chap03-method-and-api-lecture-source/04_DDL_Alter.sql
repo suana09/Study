@@ -172,12 +172,28 @@ create table ORDERS1 (
 	order_id number(12, 0),
 	order_date date default sysdate,
 	order_mode varchar2(8),
-	customer_idnumber(6, 0),
+	customer_id number(6, 0),
 	order_status number(2, 0),
 	order_total number(8, 2) default 0,
 	sales_rep_id number(6, 0),
-	promotion_id number(6, 0)
+	promotion_id number(6, 0),
 	
 	constraint pk_order primary key (order_id),
-	constraint ck_order_mode (order_mode in ('direct', 'online'));
+	constraint ck_order_mode check (order_mode in ('direct', 'online'))
 );
+
+-- 테이블 수정 EX
+-- customer_id 필드명을 customer_number 로 수정
+alter table orders1 rename column customer_id to customer_number; 
+
+--promotion_id 값은 10000~99999 사이의 값만 저장 가능
+
+alter table orders1 add constraint pro CHECK (promotion_id >= 10000 and promotion_id <=99999);
+alter table orders1 add constraint pro CHECK (promotion_id between 10000 and 99999); --이렇게도 표현 가능
+
+
+-- 테이블의 복사
+create table orders2 as select * from orders1;alter
+
+-- 테이블의 제거
+drop table orders2 purge; --purge는 생략 가능
