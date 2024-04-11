@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap01-literal-and-variable-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap02-operation-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap03-method-and-api-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap04-control-flow-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap05-array-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap06-class-and-object-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap06-class-and-object-practice-question/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap07-object-array-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap08-inheritance-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap09-polymorphism-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap10-api-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap11-generics-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap12-collection-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap13-exception-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/01_JAVA/01-lecture-source/chap14-io-lecture-source/src"/>
+	<classpathentry kind="src" path="JAVA/02_JAVA_practice/chap01-literal-and-variable-practice/src"/>
+	<classpathentry kind="src" path="JAVA/02_JAVA_practice/chap02-operator-practice/src"/>
+	<classpathentry kind="src" path="JAVA/02_JAVA_practice/chap03-method-and-api-practice/src"/>
+	<classpathentry kind="src" path="JAVA/myPractice/20240401/teamstudy/src"/>
+	<classpathentry kind="src" path="JAVA/myPractice/20240407/collections/src"/>
+	<classpathentry kind="src" path="JAVA/myPractice/20240410stream/streamAPI/src"/>
+	<classpathentry kind="src" path="JAVA/myPractice/suatest20240408/src"/>
+	<classpathentry kind="src" path="OracleDB/src"/>
+	<classpathentry kind="output" path="JAVA/01_JAVA/out/production/chap03-method-and-api-lecture-source"/>
+</classpath>
