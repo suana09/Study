@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3513c618-d555-4d52-9f4c-72d6a0c6ad0c" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2eX3Utzc7EzH2ntGpWFbyuqV34d" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "Application.Application1.executor": "Run",
+    "Application.Application2.executor": "Run",
+    "Application.Application3.executor": "Run",
+    "Application.Application4.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/hi/Documents/classes/01_JAVA/01-lecture-source/chap11-generics-lecture-source",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-temurin-17.0.10-4caba194b151-b3785831" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3513c618-d555-4d52-9f4c-72d6a0c6ad0c" name="Changes" comment="" />
+      <created>1712037114789</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712037114789</updated>
+      <workItem from="1712037115769" duration="3000" />
+      <workItem from="1712039439936" duration="25000" />
+      <workItem from="1712039492217" duration="5655000" />
+      <workItem from="1712104757519" duration="32000" />
+      <workItem from="1712104808650" duration="2245000" />
+      <workItem from="1712107889833" duration="2576000" />
+      <workItem from="1712111418654" duration="5246000" />
+      <workItem from="1712122498552" duration="7266000" />
+      <workItem from="1712133035578" duration="589000" />
+      <workItem from="1712134215449" duration="1840000" />
+      <workItem from="1712190131646" duration="595000" />
+      <workItem from="1712190735088" duration="66000" />
+      <workItem from="1712190816415" duration="25000" />
+      <workItem from="1712193305792" duration="960000" />
+      <workItem from="1712195081420" duration="118000" />
+      <workItem from="1712195273839" duration="67000" />
+      <workItem from="1712195609764" duration="174000" />
+      <workItem from="1712196224185" duration="48000" />
+      <workItem from="1712196419466" duration="1430000" />
+      <workItem from="1712200342127" duration="287000" />
+      <workItem from="1712200705808" duration="100000" />
+      <workItem from="1712200826561" duration="848000" />
+      <workItem from="1712203858802" duration="23000" />
+      <workItem from="1712203924803" duration="196000" />
+      <workItem from="1712204298663" duration="676000" />
+      <workItem from="1712211320069" duration="751000" />
+      <workItem from="1712212911667" duration="103000" />
+      <workItem from="1712215195681" duration="1539000" />
+      <workItem from="1712217463401" duration="1718000" />
+      <workItem from="1712220183679" duration="926000" />
+      <workItem from="1712221129491" duration="1318000" />
+      <workItem from="1712276320500" duration="30000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

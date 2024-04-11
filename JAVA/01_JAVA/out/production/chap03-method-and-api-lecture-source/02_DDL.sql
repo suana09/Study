@@ -6,15 +6,15 @@
 CREATE TABLE tableName(
 
 --default : 명시적으로 입력하지 않아도 자동으로 들어갈 값
-	fieldName1 DATATYPE [DEFAULT 값 OR 제약조건 등...,
-	fieldName2 DATATYPE [DEFAULT 값 OR 제약조건 등...
-	fieldName3 DATATYPE [DEFAULT 값 OR 제약조건 등...,
-	fieldName4 DATATYPE [DEFAULT 값 OR 제약조건 등...,
+	fieldName1 DATATYPE [DEFAULT 값 OR 제약조건 등...],
+	fieldName2 DATATYPE [DEFAULT 값 OR 제약조건 등...]
+	fieldName3 DATATYPE [DEFAULT 값 OR 제약조건 등...],
+	fieldName4 DATATYPE [DEFAULT 값 OR 제약조건 등...],
 	...
-	fieldName DATATYPE [DEFAULT 값 OR 제약조건 등...,
+	fieldName DATATYPE [DEFAULT 값 OR 제약조건 등...],
 );
 
---도서대여점 테이블 만들기 .. 
+--도서어쩌구..
 --필드:booknum, subject, makeyear, inprice, outprice
 --자료형:booknum(문자 5자리), subject(문자30자리), makeyear(문자4자리)
 --			inprice(문자6자리), outprice(문자6자리)
@@ -22,7 +22,7 @@ CREATE TABLE tableName(
 --테이블명: booklist
 
 CREATE TABLE booklist(
-	booknum varchar2(5) ,
+	booknum varchar2(5) primary key,
 	subject varchar2(30) not null,
 	makeyear number(4),
 	inprice number(6)not null,
@@ -72,49 +72,5 @@ DROP TABLE booklist purge;
 --						Phone: VARCHAR2(13), Birth : DATE, Bpoint : NUMBER(6)
 -- 제약 조건: memberNum, memberName, Phone 세개의 필드 Not Null
 --					memberNum : Primary Key - 테이블 레벨로 설정
-
-
-CREATE TABLE memberlist(
-	memberNum varchar2(5) not null,
-	memberName varchar2(12) not null,
-	Phone varchar2(13) not null,
-	Birth DATE,
-	Bpoint NUMBER(6),
-
-	constraint member_pk primary key (memberNum)
-);
-
-select * from memberlist;
-
-
---외래키 (FOREIGN KEY) : 테이블 간의 필수 포함 관계에 있어
---상대 테이블의 특정 필드값을 참조하면서 * 없는 값을 사용할 수 없도록 * 하는 규칙
---외래키로 유지되는 무결성을 "참조무결성" 이라고 부름
---예를 들면, booklist에 존재하지 않은 도서의 번호가 rentlist의 빌려간 도서의 번호로 등록되지 못하게 하는 것을 말함
-
---테이블 생성3
---테이블 이름: rentlist
---필드: idx(number(3)), rent_date (date), bnum (varchar2(5)), mnum (varchar2(5)), discount (number(4) 
---제약조건 : bnum, mnum : not null
-
-CREATE TABLE rentlist(
-	idx number(3), --대여기록번호
-	rent_date date default sysdate, --대여날짜
-	--sysdate : 오라클에서 제공해주는 현재 날짜+시각
-	--rent_seq number(3), --하나의 날짜 안에서 지정된 순번
-	bnum varchar2(5) not null, --대여해간 도서번호
-	mnum varchar2(5) not null,  --대여한 회원의 회원번호
-	discount number(4) default 500, --할인금액
-	--constraint rent_pk primary key (rent_date, rent_seq)  --두 개의 필드가 조합된 기본키를 만들 수 있음
-	constraint rent_pk primary key (idx),
-	
-	constraint fk1 foreign key (bnum) references booklist(booknum), 
-	--bnum은 현재 테이블의 외래키 , booklist 테이블의 booknum 필드값을 참조한다는 의미
-	constraint fk2 foreign key(mnum) references MemberList(membernum)
-	--mnum은 현재 테이블의 외래키 , memberlist 테이블의 membernum 필드값을 참조한다는 의미
-	
-);
-
-select * from rentlist;
 
 
