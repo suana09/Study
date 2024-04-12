@@ -23,7 +23,7 @@ CREATE TABLE tableName(
 
 CREATE TABLE booklist(
 	booknum varchar2(5) ,
-	subject varchar2(30) not null,
+	subject varchar2(45) not null,
 	makeyear number(4),
 	inprice number(6)not null,
 	outprice number(6)not null,

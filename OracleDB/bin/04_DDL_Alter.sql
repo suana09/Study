@@ -125,16 +125,16 @@ alter table rentlist drop constraint rent_pk;
 
 
 --booklist의 booknum 필드를 number(5)로 자료형 변경
-alter table booklist modify booknum number(5);	
+alter table booklist modify booknum number(14);	
 
 --memberlist의 membernum 필드를 number(5)로 자료형 변경
-alter table memberlist modify membernum number(5);
+alter table memberlist modify membernum number(14);
 
 --rentlist의 bnum 필드를 number(5)로 자료형 변경
-alter table rentlist modify bnum number(5);	
+alter table rentlist modify bnum number(14);	
 
 --rentlist의 mnum 필드를 number(5)로 자료형 변경
-alter table rentlist modify mnum number(5);	
+alter table rentlist modify mnum number(14);	
 
 
 ---------제약조건을 제거 후 자료형 변경 > 성공!

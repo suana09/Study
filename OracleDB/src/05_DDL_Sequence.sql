@@ -46,6 +46,11 @@ create sequence rent_seq start with 1 increment by 1;
 --
 --
 --
+
+create table testTable (
+	field1 number(10) not null;
+);
+
 --
 --
 --
