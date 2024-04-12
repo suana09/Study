@@ -1,7 +1,4 @@
-/01_Basic.sql
-/02_DDL.sql
-/03_DataType.sql
-/04_DDL_Alter.sql
-/05_DDL_Sequence.sql
-/module-info.class
-/06_DML.sql
+/06_DML_Insert.sql
+/00_SampleData.sql
+/09_join.sql
+/10_View.sql

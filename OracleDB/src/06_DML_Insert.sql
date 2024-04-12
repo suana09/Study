@@ -86,6 +86,8 @@ insert into memberlist values (member_seq.nextVal, '러바오', '휴대폰없음
 insert into memberlist values (member_seq.nextVal, '루이바오', '휴대폰없음..', '20240704', null, 'F', 0);
 insert into memberlist values (member_seq.nextVal, '후이바오', '휴대폰없음..', '20240704', null, 'F', 0);
 
+insert into memberlist values (member_seq.nextVal, '곰돌이', '010-0000-1111', '20210505', 300, 'M', 3);
+
 select*from memberlist;
 
 
