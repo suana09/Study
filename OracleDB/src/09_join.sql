@@ -90,7 +90,7 @@ select * from emp a, dept b where a.deptno(+)=b.deptno;
 
 --1. ANSI inner join
 
---비교를 위한 일반 equi join
+--비교를 위한 일반 inner join
 select a.ename, b.dname
 from emp a, dept b
 where a.deptno = b.deptno;
@@ -106,7 +106,7 @@ from emp inner join dept using (deptno);
 
 --2. ANSI outer join
 
---비교를 위한 일반 non-equi join (outer join)
+--비교를 위한 일반 outer join
 select*from emp, dept
 where emp.deptno(+) = dept.deptno;
 

@@ -48,3 +48,5 @@ where a.bnum = b.booknum and a.mnum = c.membernum
 order by bnum;
 
 select*from report;
+
+select a.rentdate from report;
