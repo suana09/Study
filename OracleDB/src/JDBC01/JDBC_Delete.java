@@ -47,6 +47,7 @@ public class JDBC_Delete {
 		try {
 			if (pstmt != null) pstmt.close();
 			if (con != null) con.close();
+			if (con != null) con.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
