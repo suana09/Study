@@ -40,6 +40,7 @@ public class JDBC_Insert {
 			String sql = "insert into customer values(?, ?, ?, ?)";
 			pstmt = con.prepareStatement(sql);
 			
+			
 			//변수들이 물음표 순서에 맞게 매칭되어 구성됨
 			pstmt.setInt(1, num);
 			pstmt.setString(2, name);
