@@ -101,4 +101,29 @@ public class MemberDAO {
 	      return result;
 	   }
 
+
+	public MemberDTO getMember(int membernum) {
+		return null;
+	}
+
+
+	public int deleteMember(int membernum) {
+		int result = 0;
+		con = dbm.getConnection();
+		String sql = "delete from memberlist where membernum = ?";
+		try {
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1,  membernum);
+			result = pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			dbm.close(con, pstmt, rs);
+		}
+		
+		
+		
+		return result;
+	}
+
 }
