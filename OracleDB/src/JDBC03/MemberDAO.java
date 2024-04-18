@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.jar.Attributes.Name;
 
 
 public class MemberDAO {
@@ -103,7 +104,35 @@ public class MemberDAO {
 
 
 	public MemberDTO getMember(int membernum) {
-		return null;
+		MemberDTO mdto = null;
+		con = dbm.getConnection();
+		String sql = "select name, phone, gender, bpoint, birth from memberlist where membernum = ?";
+		
+		//이름 전화번호 성별 bpoint 생일
+		
+		try {
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, membernum);
+			
+			rs = pstmt.executeQuery();
+			
+			if(rs.next()) {
+				mdto = new MemberDTO();
+				mdto.setMembernum( rs.getInt("membernum") );
+				mdto.setName( rs.getString("name") );
+				mdto.setPhone( rs.getString("phone") );
+				mdto.setBirth( rs.getDate("birth") );  
+				mdto.setGender( rs.getString("gender") );
+				mdto.setAge( rs.getInt("age") );
+				mdto.setBpoint( rs.getInt("bpoint") );
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+
+		return mdto;
 	}
 
 

@@ -16,12 +16,12 @@ public class Member_Update {
 		MemberDTO mdto = mdao.getMember( membernum ); 
 		
 		if( mdto == null ) {
-			System.out.println("입력한 번호의 회원이 존재하시 않습니다\n프로그램을 종료합니다.");
+			System.out.println("입력한 번호의 회원이 존재하지 않습니다\n프로그램을 종료합니다.");
 			return;
 		}
 		
 		String input = "";
-		System.out.printf("\n이름 : %s \n수정할 이름을 입력하세요(수정안하며 Enter입력) -> ", mdto.getName() );
+		System.out.printf("\n이름 : %s \n수정할 이름을 입력하세요(수정하지 않으려면 엔터만 입력) -> ", mdto.getName() );
 		input = sc.nextLine();
 		if( !input.equals("") ) mdto.setName(input);
 		
@@ -57,7 +57,6 @@ public class Member_Update {
 		int result = mdao.updateMember(mdto);
 		if( result == 1 ) System.out.println("레코드 수정 성공");
 		else System.out.println("레코드 수정 실패");
-		
 		
 	}
 
